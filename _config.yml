@@ -34,6 +34,10 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
+include: ["_pages"]
+paginate: 5 # amount of posts to show
+paginate_path: /blog/page:num/
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
@@ -53,3 +57,19 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+author:
+  name: "Kacper Roszczyna"
+  avatar: "/assets/images/bio-image.jpeg"
+  bio: "People say I make useful software"
+  location: "Warsaw, Poland"
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://x.com/KacperRoszczyna"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/kacper-roszczyna"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/kacper.ros/"
