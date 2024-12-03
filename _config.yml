@@ -22,7 +22,7 @@ title: Kacper Roszczyna IT Consultancy
 email: kacper.roszczyna@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is the site where my professional project are posted. 
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://kacper-roszczyna.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: kacper-roszczyna
 github_username:  kacper-roszczyna
@@ -31,6 +31,7 @@ remote_theme: "mmistakes/minimal-mistakes@4.26.2"
 # Build settings
 theme: minima
 plugins:
+  - jekyll-paginate
   - jekyll-feed
   - jekyll-include-cache
 
