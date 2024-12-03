@@ -20,7 +20,7 @@ I did not hold any role directly within the company, however I was allocated sup
 > <cite>Probably someone operating a lemonade stand</cite>
 
 ## The Problem
-The client reached out to improve their process to source clients. In Poland the companies are required to be audited when they meet two financial criterias:
+The client reached out with a need improve their client sourcing process. In Poland all companies are required to be audited when they meet two financial criterias:
 1. Their total asset value crosses a certain theshold 
 2. Their total income crosses a certain threshold
 
@@ -30,12 +30,12 @@ The client had a couple of interns scour a public registry of court documents wh
 ## The Constraints
 There were two key constraints for this project:
 1. Time - the client reached out fairly late in terms of the financial audit year, as such there was hardly two weeks to complete the project and create a working solution, before it would become unviable
-2. Cost - the client stated upfront that there is very little budget allocated to the project. However how little, I had yet to learn.
+2. Cost - the client stated upfront that there is very little budget allocated to the project. However how little, I had yet to find out.
 
 ## The Solution - V1 - Modern AI Use Case
 From the start of the project it was evident that the client is not looking for a big system, but rather a quick fix. With a constrained budget
-I understood that my best bet to help them would be to create even a simple script that could be run on the company laptop. And while it doesn't sound
-glamorous that's the fastest, cheapest solution that's going to create client value. 
+I understood that my best bet to help them would be to create a simple script that could be run on the company laptop. And while it doesn't sound
+glamorous that was the fastest, cheapest solution that was going to create client value. And that is IT's main job, to create value for business.
 
 Realizing that I knew that there are a few parts to this:
 1. Pulling the data from the public registry - luckily the client provided me with an API for that
@@ -48,7 +48,7 @@ Additional requirements not specified by the client:
 2. This script has to be configurable to search for all companies registered in a range of dates
 3. This script has to be run every half-year or quarter
 
-While there is nothing particularly fancy in retrieving data - this can be done via curl even, the data retrieval aspect was a concern. The data is stored in PDFs. 
+While there is nothing particularly fancy in retrieving data - this can be done even via curl, the data retrieval aspect was a concern. The data is stored in PDFs. 
 
 I recommended the client we use one of the recently released closed source multi-modal LLMs like ChatGPT. However this would mean that evaluating each company would cost at least 50 cents. At over 10k registered companies per quarter that was not a feasible cost for the client. 
 As such I had to put my engineering gloves on, abandon OpenAI and get down and dirty with the code.
@@ -58,8 +58,10 @@ In such a predicament the only solution was to go old-school and use an OCR whic
 
 The solution is called Tesseract and provides a lot of functionality in a neatly packaged command line module. One of its functionality is pdf to text conversion. With some experiments and research the right set of options provided a file which was almost as good as a csv to work with. 
 
-And so the final solution to the client's need was a simple Java program, based on Spring. 
+And so the final solution to the client's need was a simple Java program based on Spring. It controlled the local flow of data, and Spring provided easy dependency injection, local database access, and calling of subprocesses.
+
+
 While it was a crude solution it met all the clients requirements and allowed them to retrieve all the data 
-they required at less than 4 cents per company. It also yielded enough new customers to nearly double their profits at the time. 
+they required at less than 4 cents per company. It also yielded enough new customers to nearly double their profits at the time, and serves them for the second year now.  
 
 # Further Reading
