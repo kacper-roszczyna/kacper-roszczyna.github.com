@@ -65,3 +65,5 @@ While it was a crude solution it met all the clients requirements and allowed th
 they required at less than 4 cents per company. It also yielded enough new customers to nearly double their profits at the time, and serves them for the second year now.  
 
 # Further Reading
+
+No articles yet.
