@@ -15,7 +15,7 @@ The role was a very standard senior developer role with a heavy focus on systems
 
 # Projects Overview and Technical Challenges
 ## Replacing an existing cache with a Kafka Topic
-Large corporations frequently run legacy software which can't be demised. One of the first projects I took part in was fixing a long cache warm up time. After some investigation it turned out that the main culprit is the contents of the cache. The solution, though unorthodox allowed to drastically shorten the startup time of the application, by persisting the cache entries onto the Kafka topic, and warming the cache from there. 
+Large corporations frequently run legacy software which can't be demised. One of the first projects I took part in was fixing a long cache warm up time. After some investigation it turned out that the main culprit is the contents of the cache. The solution, though unorthodox, allowed to drastically shorten the startup time of the application by persisting the cache entries onto the Kafka topic, and warming the cache from it. 
 
 ## Uplifiting a legacy system
 As I mentioned earlier - large corporations run legacy software. Luckily, sometimes they also want to demise it. A project I was tasked with was to uplift a piece of code written in an internal scripting language of Goldman Sachs to a modern Java application. When I left the company the code was not yet productionized, however I later found out it finally made it into production. 
