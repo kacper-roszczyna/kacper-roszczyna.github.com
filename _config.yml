@@ -37,7 +37,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-google_site_verification: 8iKLNBIxl09YHULQndxv_Jeao
+google_site_verification: 8iKLNBIxl09YHULQndxv_Jeao-oGfsinNts-LPsGonw
 include: ["_pages"]
 paginate: 5 # amount of posts to show
 paginate_path: /blog/page:num/
